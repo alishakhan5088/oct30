@@ -10,4 +10,7 @@ jobs:
           whoami
           pwd
           cd
-
+      - name: mystep2-clone the repo in current work directory
+        uses: actions/checkout@v4
+      - name: mystep3-check the source code
+        run: ls -al
