@@ -4,3 +4,5 @@ on:
 jobs:
   myjob1:
     runs-on:
+    steps:
+      - name: mystep1
