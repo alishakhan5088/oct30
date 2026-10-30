@@ -12,9 +12,12 @@ jobs:
           cd
           docker --version
           docker compose version
-          docker images
       - name: mystep2-clone the repo in current work directory
         uses: actions/checkout@v4
       - name: mystep3-check the source code
         run: ls -al
+      - name: mystep4-we are going to build our own docker image
+        run: docker image build -t alisha/myimage_oct30:t1 -f Dockerfile .
+      - name: mystep5-check the docker image
+        run: docker image ls 
 
