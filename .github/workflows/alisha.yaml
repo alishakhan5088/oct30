@@ -3,6 +3,11 @@ on:
   push:
 jobs:
   myjob1:
-    runs-on:
+    runs-on: ubuntu-latest
     steps:
       - name: mystep1
+        run: |
+          whoami
+          pwd
+          cd
+
